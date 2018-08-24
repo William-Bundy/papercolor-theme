@@ -1191,14 +1191,14 @@ fun! s:apply_syntax_highlightings()
   exec 'hi Constant' . s:fg_orange
   exec 'hi String' . s:fg_olive
   exec 'hi Character' . s:fg_olive
-  exec 'hi Number' . s:fg_orange
+  exec 'hi Number' . s:fg_olive
   exec 'hi Boolean' . s:fg_green . s:ft_bold
-  exec 'hi Float' . s:fg_orange
+  exec 'hi Float' . s:fg_olive
 
   exec 'hi Identifier' . s:fg_navy
   exec 'hi Function' . s:fg_foreground
 
-  exec 'hi Statement' . s:fg_pink . s:ft_none
+  exec 'hi Statement' . s:fg_purple . s:ft_none
   exec 'hi Conditional' . s:fg_purple . s:ft_bold
   exec 'hi Repeat' . s:fg_purple . s:ft_bold
   exec 'hi Label' . s:fg_blue
@@ -1212,10 +1212,10 @@ fun! s:apply_syntax_highlightings()
   exec 'hi Macro' . s:fg_blue
   exec 'hi PreCondit' . s:fg_aqua
 
-  exec 'hi Type' . s:fg_pink . s:ft_bold
+  exec 'hi Type' . s:fg_purple . s:ft_bold
   exec 'hi StorageClass' . s:fg_navy . s:ft_bold
   exec 'hi Structure' . s:fg_blue . s:ft_bold
-  exec 'hi Typedef' . s:fg_pink . s:ft_bold
+  exec 'hi Typedef' . s:fg_purple . s:ft_bold
 
   exec 'hi Special' . s:fg_foreground
   exec 'hi SpecialChar' . s:fg_foreground
@@ -1307,7 +1307,7 @@ fun! s:apply_syntax_highlightings()
   exec 'hi cmakeKWtarget_sources' . s:fg_orange
 
   " C Highlighting
-  exec 'hi cType' . s:fg_pink . s:ft_bold
+  exec 'hi cType' . s:fg_purple . s:ft_bold
   exec 'hi cFormat' . s:fg_olive
   exec 'hi cStorageClass' . s:fg_navy . s:ft_bold
 
@@ -1317,7 +1317,7 @@ fun! s:apply_syntax_highlightings()
   exec 'hi cConditional' . s:fg_purple . s:ft_bold
   exec 'hi cSpecial' . s:fg_olive . s:ft_bold
   exec 'hi cDefine' . s:fg_blue
-  exec 'hi cNumber' . s:fg_orange
+  exec 'hi cNumber' . s:fg_olive
   exec 'hi cPreCondit' . s:fg_aqua
   exec 'hi cRepeat' . s:fg_purple . s:ft_bold
   exec 'hi cLabel' . s:fg_aqua
@@ -1328,6 +1328,7 @@ fun! s:apply_syntax_highlightings()
   " exec 'hi cIdentifier' . s:fg_blue . s:bg_pink
   " exec 'hi cSemiColon'  . s:bg_blue
   exec 'hi cOperator' . s:fg_aqua
+  exec 'hi cPOperator' . s:fg_comment
   " exec 'hi cStatement' . s:fg_pink
   " exec 'hi cTodo' . s:fg_comment . s:ft_bold
   " exec 'hi cStructure' . s:fg_blue . s:ft_bold
